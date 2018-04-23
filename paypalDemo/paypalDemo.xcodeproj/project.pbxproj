@@ -13,10 +13,6 @@
 		DA062081208DB8E6006EFC6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA062080208DB8E6006EFC6D /* Assets.xcassets */; };
 		DA062084208DB8E6006EFC6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA062082208DB8E6006EFC6D /* LaunchScreen.storyboard */; };
 		DA062087208DB8E6006EFC6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA062086208DB8E6006EFC6D /* main.m */; };
-		DA06209D208DB921006EFC6D /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA062096208DB920006EFC6D /* libPayPalMobile.a */; };
-		DA06209E208DB921006EFC6D /* libopencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA062098208DB920006EFC6D /* libopencv_core.a */; };
-		DA06209F208DB921006EFC6D /* libCardIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA062099208DB920006EFC6D /* libCardIO.a */; };
-		DA0620A0208DB921006EFC6D /* libopencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA06209A208DB920006EFC6D /* libopencv_imgproc.a */; };
 		DA0620A1208DB921006EFC6D /* ServicePaypal.m in Sources */ = {isa = PBXBuildFile; fileRef = DA06209C208DB920006EFC6D /* ServicePaypal.m */; };
 		DA0620A4208DBB8B006EFC6D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0620A3208DBB8B006EFC6D /* libxml2.tbd */; };
 		DA0620A6208DBB94006EFC6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0620A5208DBB94006EFC6D /* UIKit.framework */; };
@@ -24,9 +20,13 @@
 		DA0620AA208DBBA4006EFC6D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0620A9208DBBA4006EFC6D /* Security.framework */; };
 		DA0620AC208DBBB2006EFC6D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0620AB208DBBB2006EFC6D /* MobileCoreServices.framework */; };
 		DA0620AF208DBED2006EFC6D /* ServicePaypal+Pay.m in Sources */ = {isa = PBXBuildFile; fileRef = DA0620AE208DBED2006EFC6D /* ServicePaypal+Pay.m */; };
+		DC3359E8BE839FC7F0BAD36F /* libPods-paypalDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68DB43358039D2ECF3370426 /* libPods-paypalDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EEA582E224DFC8FCD803D3B /* Pods-paypalDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paypalDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-paypalDemo/Pods-paypalDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		664C09BA8B0244043BE22779 /* Pods-paypalDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-paypalDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-paypalDemo/Pods-paypalDemo.release.xcconfig"; sourceTree = "<group>"; };
+		68DB43358039D2ECF3370426 /* libPods-paypalDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-paypalDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA062074208DB8E5006EFC6D /* paypalDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = paypalDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA062077208DB8E5006EFC6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA062078208DB8E5006EFC6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,17 +37,6 @@
 		DA062083208DB8E6006EFC6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA062085208DB8E6006EFC6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA062086208DB8E6006EFC6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DA06208F208DB920006EFC6D /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
-		DA062090208DB920006EFC6D /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
-		DA062091208DB920006EFC6D /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
-		DA062092208DB920006EFC6D /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
-		DA062093208DB920006EFC6D /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
-		DA062094208DB920006EFC6D /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
-		DA062095208DB920006EFC6D /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
-		DA062096208DB920006EFC6D /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
-		DA062098208DB920006EFC6D /* libopencv_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_core.a; sourceTree = "<group>"; };
-		DA062099208DB920006EFC6D /* libCardIO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCardIO.a; sourceTree = "<group>"; };
-		DA06209A208DB920006EFC6D /* libopencv_imgproc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopencv_imgproc.a; sourceTree = "<group>"; };
 		DA06209B208DB920006EFC6D /* ServicePaypal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicePaypal.h; sourceTree = "<group>"; };
 		DA06209C208DB920006EFC6D /* ServicePaypal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicePaypal.m; sourceTree = "<group>"; };
 		DA0620A3208DBB8B006EFC6D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
@@ -69,16 +58,22 @@
 				DA0620A8208DBB9E006EFC6D /* SystemConfiguration.framework in Frameworks */,
 				DA0620A6208DBB94006EFC6D /* UIKit.framework in Frameworks */,
 				DA0620A4208DBB8B006EFC6D /* libxml2.tbd in Frameworks */,
-				DA0620A0208DB921006EFC6D /* libopencv_imgproc.a in Frameworks */,
-				DA06209D208DB921006EFC6D /* libPayPalMobile.a in Frameworks */,
-				DA06209F208DB921006EFC6D /* libCardIO.a in Frameworks */,
-				DA06209E208DB921006EFC6D /* libopencv_core.a in Frameworks */,
+				DC3359E8BE839FC7F0BAD36F /* libPods-paypalDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A152E3FD19415D6FFD3C1767 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EEA582E224DFC8FCD803D3B /* Pods-paypalDemo.debug.xcconfig */,
+				664C09BA8B0244043BE22779 /* Pods-paypalDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DA06206B208DB8E5006EFC6D = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +81,7 @@
 				DA062076208DB8E5006EFC6D /* paypalDemo */,
 				DA062075208DB8E5006EFC6D /* Products */,
 				DA0620A2208DBB8B006EFC6D /* Frameworks */,
+				A152E3FD19415D6FFD3C1767 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,38 +114,11 @@
 		DA06208D208DB920006EFC6D /* UBPaypalTool */ = {
 			isa = PBXGroup;
 			children = (
-				DA06208E208DB920006EFC6D /* PayPalMobile */,
-				DA062097208DB920006EFC6D /* CardIO */,
 				DA06209B208DB920006EFC6D /* ServicePaypal.h */,
 				DA06209C208DB920006EFC6D /* ServicePaypal.m */,
 			);
 			name = UBPaypalTool;
 			path = ../UBPaypalTool;
-			sourceTree = "<group>";
-		};
-		DA06208E208DB920006EFC6D /* PayPalMobile */ = {
-			isa = PBXGroup;
-			children = (
-				DA06208F208DB920006EFC6D /* PayPalMobile.h */,
-				DA062090208DB920006EFC6D /* PayPalPaymentViewController.h */,
-				DA062091208DB920006EFC6D /* PayPalPayment.h */,
-				DA062092208DB920006EFC6D /* PayPalOAuthScopes.h */,
-				DA062093208DB920006EFC6D /* PayPalFuturePaymentViewController.h */,
-				DA062094208DB920006EFC6D /* PayPalProfileSharingViewController.h */,
-				DA062095208DB920006EFC6D /* PayPalConfiguration.h */,
-				DA062096208DB920006EFC6D /* libPayPalMobile.a */,
-			);
-			path = PayPalMobile;
-			sourceTree = "<group>";
-		};
-		DA062097208DB920006EFC6D /* CardIO */ = {
-			isa = PBXGroup;
-			children = (
-				DA062098208DB920006EFC6D /* libopencv_core.a */,
-				DA062099208DB920006EFC6D /* libCardIO.a */,
-				DA06209A208DB920006EFC6D /* libopencv_imgproc.a */,
-			);
-			path = CardIO;
 			sourceTree = "<group>";
 		};
 		DA0620A2208DBB8B006EFC6D /* Frameworks */ = {
@@ -160,6 +129,7 @@
 				DA0620A7208DBB9E006EFC6D /* SystemConfiguration.framework */,
 				DA0620A5208DBB94006EFC6D /* UIKit.framework */,
 				DA0620A3208DBB8B006EFC6D /* libxml2.tbd */,
+				68DB43358039D2ECF3370426 /* libPods-paypalDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,6 +141,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA06208A208DB8E6006EFC6D /* Build configuration list for PBXNativeTarget "paypalDemo" */;
 			buildPhases = (
+				902954F461B4E66EB4D0FA36 /* [CP] Check Pods Manifest.lock */,
 				DA062070208DB8E5006EFC6D /* Sources */,
 				DA062071208DB8E5006EFC6D /* Frameworks */,
 				DA062072208DB8E5006EFC6D /* Resources */,
@@ -228,6 +199,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		902954F461B4E66EB4D0FA36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-paypalDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA062070208DB8E5006EFC6D /* Sources */ = {
@@ -376,6 +368,7 @@
 		};
 		DA06208B208DB8E6006EFC6D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEA582E224DFC8FCD803D3B /* Pods-paypalDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -386,8 +379,8 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../UBPaypalTool/PayPalMobile",
-					"$(PROJECT_DIR)/../UBPaypalTool/CardIO",
+					"\"${PODS_ROOT}/CardIO/CardIO\"",
+					"\"${PODS_ROOT}/PayPal-iOS-SDK/PayPalMobile\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.ios.paypalDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -397,6 +390,7 @@
 		};
 		DA06208C208DB8E6006EFC6D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 664C09BA8B0244043BE22779 /* Pods-paypalDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -407,8 +401,8 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../UBPaypalTool/PayPalMobile",
-					"$(PROJECT_DIR)/../UBPaypalTool/CardIO",
+					"\"${PODS_ROOT}/CardIO/CardIO\"",
+					"\"${PODS_ROOT}/PayPal-iOS-SDK/PayPalMobile\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.ios.paypalDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

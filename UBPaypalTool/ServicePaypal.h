@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PayPalMobile.h"
+#import <PayPalMobile.h>
 
 @interface ServicePaypal : NSObject
 

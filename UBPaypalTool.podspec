@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "UBPaypalTool"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A short description of UBPaypalTool."
 
   s.description  = <<-DESC
@@ -21,19 +21,14 @@ A short description of UBPaypalTool.
   s.source       = { :git => "https://github.com/Crazysiri/UBPaypalTool.git", :tag => "#{s.version}" }
 
 
-  s.source_files  = "UBPaypalTool/**/*.{h,m}"
-  
-  s.subspec 'PayPalMobile' do |ss|
-    ss.source_files = 'UBPaypalTool/PayPalMobile/*.{h,m}'
-    ss.ios.vendored_libraries  = 'UBPaypalTool/PayPalMobile/libPayPalMobile.a','UBPaypalTool/CardIO/libopencv_core.a','UBPaypalTool/CardIO/libCardIO.a','UBPaypalTool/CardIO/libopencv_imgproc.a'
-  end
+  s.source_files  = "UBPaypalTool/*.{h,m}"
 
   # s.framework  = "SomeFramework"
   s.frameworks = "MobileCoreServices", "Security","SystemConfiguration"
 
   s.library   = "xml2"
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.xcconfig = { "LIBRARY_SEARCH_PATHS" => "${PODS_ROOT}/CardIO/CardIO" }
+  s.dependency "PayPal-iOS-SDK"
 
 end
